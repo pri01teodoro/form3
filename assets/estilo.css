@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: row; /* lado a lado//padrão */
+    justify-content: space-between; /* justificado e com espaço entre eles */
+    flex-wrap: wrap; /* escorrega para baixo quando a coluna não cabe no espaço */
+    margin: 20px;
+
+}
+
+.card_cabecalho{
+    background-image: url(./imgs/fundo-fazenda.png); /* criar uma classe para cada item para mudar a imagem de fundo */
+    height: 248px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_titulo{
+    text-shadow: 2px 2px 5px #f1f1f1;
+}
+
+.card_texto{
+    padding: 10px;
+}
+
+.card{
+    border: 1px #50AA5A solid;
+    border-radius: 20px;
+    width: 284px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_link{
+    background-color: #50AA5A;
+    color: #f1f1f1;
+    text-align: center;
+    text-decoration: none; /* tira o sublinhado */
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+.card_link:houver{
+    background-color: #358b3f;
+}
